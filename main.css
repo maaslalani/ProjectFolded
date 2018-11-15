@@ -1,0 +1,61 @@
+:root {
+  --primary: #4A22EA;
+}
+
+html,
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Alike', serif;
+  font-size: 4.5em;
+  font-weight: 400;
+
+  color: white;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+
+  color: white;
+
+  padding: 3% 0;
+}
+
+button {
+  font-family: 'Alike', serif;
+  font-size: 1.5em;
+
+  background-color: white;
+  color: black;
+
+  padding: 2% 5%;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+header,
+section,
+footer {
+  padding: 5%;
+}
+
+header {
+  background-color: var(--primary);
+
+  height: 70vh;
+}
+
+header img {
+  position: absolute;
+
+  top: 0;
+  right: 5%;
+}
