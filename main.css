@@ -1,5 +1,6 @@
 :root {
   --primary: #4A22EA;
+  --primary-dark: #3713C6;
 }
 
 html,
@@ -15,6 +16,17 @@ h1 {
   font-weight: 400;
 
   color: white;
+}
+
+h2 {
+  font-family: 'Alike', serif;
+  font-size: 4.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Alike', serif;
+  font-weight: 400;
 }
 
 p {
@@ -44,18 +56,69 @@ button {
 header,
 section,
 footer {
-  padding: 5%;
+  padding: 5% 10%;
 }
 
 header {
   background-color: var(--primary);
 
-  height: 70vh;
+  height: 75vh;
+}
+
+footer {
+  background-color: var(--primary-dark);
+
 }
 
 header img {
   position: absolute;
 
-  top: 0;
-  right: 5%;
+  top: -5vh;
+  right: 2%;
+}
+
+#philosophy, #animals {
+  background-color: var(--primary);
+  color: white;
+}
+
+#philosophy {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+process-container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+process-keyboard,
+process-printer,
+process-fold,
+process-ship {
+  display: inline-block;
+
+  text-align: center;
+}
+
+quote {
+  display: block;
+
+  font-size: 3em;
+
+  padding-left: 2.5%;
+
+  border-left: 0.1em solid white;
+}
+
+animal-row {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
