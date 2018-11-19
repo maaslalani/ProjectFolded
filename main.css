@@ -11,6 +11,7 @@ body,
 h1 {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 h1 {
@@ -77,6 +78,14 @@ button {
   cursor: pointer;
 
   outline: none;
+
+  transition: box-shadow 0.25s;
+}
+
+button:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+
+  transition: box-shadow 0.25s;
 }
 
 header,
@@ -194,20 +203,24 @@ origami-types {
 
   justify-content: space-between;
 
-  padding-top: 2.5%;
+  flex-wrap: wrap;
+
 }
 
 origami-type {
+  margin-top: 2.5%;
   padding: 5%;
+
+  text-align: center;
 
   border-radius: 0.5em;
 }
 
-origami-type:first-child {
+origami-type.selected {
   background-color: var(--primary-light);
 }
 
-origami-type:first-child h5 {
+origami-type.selected h5 {
   color: var(--primary);
 }
 
@@ -239,6 +252,8 @@ footer footer-section {
   display: block;
 
   flex: 1;
+
+  margin-right: 5%;
 }
 
 footer h1 {
@@ -266,6 +281,13 @@ footer a {
   margin-top: 10%;
   margin-bottom: 10%;
 
+  transition: opacity 0.25s;
+}
+
+footer a:hover {
+  opacity: 0.8;
+
+  transition: opacity 0.25s;
 }
 
 .faded {
@@ -295,4 +317,17 @@ social-icons {
 
 social-icon {
   margin-right: 2.5em;
+}
+
+social-icon img {
+  opacity: 0.5;
+  
+  cursor: pointer;
+
+  transition: all 0.5s; 
+}
+
+social-icon img:hover  {
+  opacity: 1;
+  transform: rotate(15deg); 
 }
