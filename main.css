@@ -1,3 +1,4 @@
+/* MAIN STYLES */ 
 :root {
   --primary: #4A22EA;
   --primary-dark: #3713C6;
@@ -100,6 +101,11 @@ header img {
   right: 2%;
 }
 
+label {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* GENERAL SECTIONS */ 
 #philosophy, #animals {
   background-color: var(--primary);
   color: white;
@@ -110,19 +116,20 @@ header img {
   padding-bottom: 10%;
 }
 
+/* ORDER SECTION */
 #order button {
-  background-color: var(--primary);
+  display: block;
 
+  background-color: var(--primary);
   color: white; 
 
-  padding-top: 3.5%;
-  padding-bottom: 3.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-
-  margin: 0 auto;
+  padding: 3% 5%;
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 5%;
 }
 
+/* PROCESS SECTION */
 process-container {
   display: flex;
 
@@ -139,6 +146,7 @@ process-ship {
   text-align: center;
 }
 
+/* PHILOSOPHY SECTION */
 quote {
   display: block;
 
@@ -149,15 +157,13 @@ quote {
   border-left: 0.2em solid white;
 }
 
+/* ORDER SECTION */
 order-labels {
   display: flex;
 
   justify-content: space-between;
 }
 
-label {
-  font-family: 'Roboto', sans-serif;
-}
 
 order-labels label:nth-child(2) {
   color: var(--light);
@@ -203,6 +209,7 @@ origami-type:first-child h5 {
   color: var(--primary);
 }
 
+/* ANIMAL SECTION */
 animal-row {
   display: flex;
 
