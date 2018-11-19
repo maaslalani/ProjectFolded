@@ -213,9 +213,84 @@ origami-type:first-child h5 {
 animal-row {
   display: flex;
 
+  flex-wrap: wrap;
+
   justify-content: space-between;
   align-items: center;
 
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+}
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+footer footer-section:first-child {
+  flex: 3;
+}
+
+footer footer-section {
+  display: block;
+
+  flex: 1;
+}
+
+footer h1 {
+  font-size: 2.25em;
+}
+
+footer h3 {
+  color: white;
+
+  font-weight: 400;
+}
+
+footer a {
+  display: block;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+
+  color: white;
+
+  opacity: 0.4;
+
+  text-decoration: none;
+
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.faded {
+  opacity: 0.4;
+
+  font-size: 1em;
+}
+
+copyright-text {
+  display: block;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+
+  color: white;
+
+  opacity: 0.4;
+  
+  margin-top: 5em;
+}
+
+social-icons {
+  display: block;
+
+  margin-top: 2.5em;
+}
+
+social-icon {
+  margin-right: 2.5em;
 }
