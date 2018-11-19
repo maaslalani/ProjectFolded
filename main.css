@@ -75,6 +75,8 @@ button {
   border-radius: 10px;
 
   cursor: pointer;
+
+  outline: none;
 }
 
 header,
