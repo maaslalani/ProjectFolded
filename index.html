@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
   <header>
     <h1>You write a message. <br> We send origami.</h1>
     <p>Send your friends and family personalized pieces of origami <br>
@@ -14,6 +15,7 @@ for any special occasion.</p>
     <button>Get Folded</button>
     <img src="./Crane.svg">
   </header>
+
   <section id="process">
     <h2>The Process</h2>
     <process-container>
@@ -44,19 +46,53 @@ for any special occasion.</p>
       </process-ship>
     </process-container>
   </section>
+
   <section id="how-it-works"> 
     <h2>How It Works</h2>
-
   </section>
+
   <section id="philosophy">
     <h1>The Philosophy</h1>
     <p>Everyone in the world deserves to be happy. Let’s make the world smile.</p>
     <quote>Every day, try to make one person smile.<br> In doing so, you will find that two people become happy.</quote>
   </section>
+
   <section id="order">
     <h2>Send Now</h2>
-     
+
+    <order-labels>
+      <label for="message">Your Personalized Message</label>
+      <label for="message">Select a prewritten message</label>
+    </order-labels>
+
+    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+
+    <label for="origami">Select Origami Type</label>
+
+    <origami-types>
+      <origami-type>
+        <img src="./origami/Letter.svg" alt="">
+        <h4>Letter</h4>
+        <h5>+$0.00</h5>
+      </origami-type>
+
+      <origami-type>
+        <img src="./origami/Crane.svg" alt="">
+        <h4>Crane</h4>
+        <h5>+$3.00</h5>
+      </origami-type>
+
+      <origami-type>
+        <img src="./origami/Flower.svg" alt="">
+        <h4>Flower</h4>
+        <h5>+$9.00</h5>
+      </origami-type>
+    </origami-types>
+
+    <button>Continue Order</button>
+
   </section>
+
   <section id="animals">
     <animal-row>
       <img src="./animals/rhino.svg" alt="">
