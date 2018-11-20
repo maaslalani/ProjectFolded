@@ -347,6 +347,13 @@ social-icon img:hover  {
     min-width: 300px;
   }
 
+  header {
+    height: 50vh;
+    min-height: 350px;
+
+    padding-bottom: 20%;
+  }
+
   origami-type img {
     height: 120px;
   }
