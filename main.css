@@ -72,6 +72,9 @@ button {
 
   padding: 2% 5%;
 
+  min-width: 200px;
+  min-height: 50px;
+
   border: none;
   border-radius: 10px;
 
@@ -330,4 +333,108 @@ social-icon img {
 social-icon img:hover  {
   opacity: 1;
   transform: rotate(15deg); 
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 12px;
+  }
+
+  header img {
+    width: 50%;
+    min-width: 300px;
+  }
+
+  origami-type img {
+    height: 120px;
+  }
+
+  animal-row img {
+    height: 100px;
+    width: 100px;
+  } 
+
+  button {
+    min-height: 75px;  
+  }
+
+  social-icon img {
+    width: 25px;
+    height: 25px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 10px;
+  }
+
+  header img {
+    width: 75%;
+    right: -150px;
+  }
+
+  #order label[for="origami"] {
+    margin-top: 25px;
+  }
+
+  origami-type img {
+    height: 65px;
+  }
+
+  animal-row img {
+    height: 64px;
+    width: 64px;
+  } 
+
+  social-icon img {
+    width: 15px;
+    height: 15px;
+  }
+
+
+
+  process-container {
+    align-items: flex-end;
+  } 
+
+  process-keyboard img,
+  process-printer img,
+  process-fold img,
+  process-ship img{
+    width: 75px;
+  }
+
+  process-arrow {
+    display: none;
+  }
+
+  button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 400px) {
+  html, body {
+    font-size: 8px;
+  }
+
+  animal-row img {
+    height: 50px;
+    width: 50px;
+  } 
+
+  process-keyboard img,
+  process-printer img,
+  process-fold img,
+  process-ship img{
+    width: 50px;
+  }
 }
