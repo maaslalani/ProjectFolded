@@ -120,14 +120,6 @@ label {
   font-family: 'Roboto', sans-serif;
 }
 
-a {
-  color: var(--primary);
-
-  text-decoration: none;
-
-  border-bottom: solid 1px;
-}
-
 /* GENERAL SECTIONS */ 
 #philosophy, #animals {
   background-color: var(--primary);
@@ -174,6 +166,14 @@ process-ship {
   color: black;
 
   line-height: 2em;
+}
+
+#how-it-works a {
+  color: var(--primary);
+
+  text-decoration: none;
+
+  border-bottom: solid 1px;
 }
 
 /* PHILOSOPHY SECTION */
